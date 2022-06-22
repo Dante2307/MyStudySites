@@ -1,0 +1,131 @@
+.contacts {
+  padding: 80px 0 0 0;
+  @media (max-width: $md2+px) {
+    padding: 30px 0 0 0;
+  }
+}
+
+.contacts__title {
+  font-family: "Akzidenz-Grotesk";
+  text-transform: uppercase;
+  font-size: 50px;
+  letter-spacing: 5px;
+  margin: 0 0 30px 0;
+}
+.contacts-body {
+  @include flexbox();
+  flex-wrap: wrap;
+}
+.contacts-body__column {
+  flex: 0 0 50%;
+  margin: 0 0 20px 0;
+  @media (max-width: $md2+px) {
+    flex: 1 1 100%;
+  }
+}
+.contacts-body__item {
+  font-size: 15px;
+  color: #000;
+  display: inline-block;
+  line-height: 27px;
+  padding: 0 0 0 35px;
+
+  &--1 {
+    background: url("../img/vv.svg") left no-repeat;
+  }
+
+  &--2 {
+    background: url("../img/email.svg") left no-repeat;
+  }
+
+  &--3 {
+    background: url("../img/telephone.svg") left no-repeat;
+  }
+}
+.contacts-social {
+  @include flexbox();
+  margin: 0 0 20px 0;
+}
+.contacts-social__item {
+  margin: 0 30px 0 0;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.contacts-content {
+  @include flexbox();
+  background-color: #000;
+
+  @media (max-width: $md2+px) {
+    display: block;
+  }
+}
+.contacts-content__column {
+  flex: 0 0 50%;
+}
+.contacts-content__map {
+  height: 100%;
+  @media (max-width: $md2+px) {
+    height: 300px;
+  }
+}
+.contacts-content-form {
+  padding: 55px 60px;
+  @media (max-width: $md2+px) {
+    padding: 30px;
+  }
+}
+.contacts-content-form__title {
+  font-family: "Akzidenz-Grotesk";
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 25px;
+  letter-spacing: 5px;
+  margin: 0 0 30px 0;
+}
+.contacts-content-form-body {
+  max-width: 375px;
+  @media (max-width: $md2+px) {
+    max-width: none;
+  }
+}
+.contacts-content-form-line {
+  margin: 0 0 25px 0;
+}
+
+input [type="text"],
+input [type="email"],
+input[type="tel"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.input {
+  border-radius: 0 !important;
+  width: 100%;
+  display: block;
+  padding: 0 18px;
+  height: 50px;
+  border: 2px solid #959595;
+  background-color: #252525;
+  color: #959595;
+  font-size: 15px;
+  &.focus {
+  }
+  &.err {
+  }
+}
+
+textarea.input {
+  height: 100px;
+  resize: none;
+  padding: 10px 18px;
+}
+.contacts-content-form-button {
+}
+.contacts-content-form__btn {
+}

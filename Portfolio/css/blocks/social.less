@@ -1,0 +1,81 @@
+//main: ../style.less
+
+.social{
+  display: flex;
+}
+
+.social__link{
+  display: flex;
+  margin-right: 10px;
+  margin-bottom: 42px;
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  line-height: 1;
+  transition: background 0.2s linear, color 0.1s linear;
+  transition: transform 0.2s linear, color 0.1s linear;
+  color: @white;
+  border-radius: 5px;
+
+  &:hover{
+    transform:translateY(-5px);
+  }
+}
+
+.social__link:first-child{
+  background-color: #1869ff;
+  &:hover{
+    border: 1px solid #1869ff;
+    background-color: @white;
+    color: #1869ff;
+  }
+}
+
+.social__link:nth-child(2){
+  background-color: #e51a68;
+  &:hover{
+    border: 1px solid #e51a68;
+    background-color: @white;
+    color: #e51a68;
+  }
+}
+
+.social__link:nth-child(3){
+  background-color: #007bb6;
+  &:hover{
+    border: 1px solid #007bb6;
+    background-color: @white;
+    color: #007bb6;
+  }
+}
+
+.social__link:nth-child(4){
+  background-color: #3a5898;
+  &:hover{
+    border: 1px solid #3a5898;
+    background-color: @white;
+    color: #3a5898;
+  }
+}
+
+.social__link:nth-child(5){
+  background-color: #13578a;
+  &:hover{
+    border: 1px solid #13578a;
+    background-color: @white;
+    color: #13578a;
+  }
+}
+
+.social__link:last-child{
+  margin-right: 0;
+  background-color: #56acef;
+  &:hover{
+    border: 1px solid #56acef;
+    background-color: @white;
+    color: #56acef;
+  }
+}

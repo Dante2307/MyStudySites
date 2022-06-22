@@ -1,0 +1,81 @@
+//main: ../style.less
+
+
+/*-----Modal_01-----*/
+.modal{
+  display: none;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  overflow: auto;
+
+  background-color: rgba(6, 15, 49, .9);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  &.show{
+    display: flex;
+  }
+
+}
+
+.modal__dialog{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+
+  background-color: #fff;
+
+  transform: scale(0);
+  transition: transform .2s linear;
+
+  &--sm{
+    max-width: 900px;
+  }
+}
+
+.modal__close{ 
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  padding: none;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  top: 1.3rem;
+  right: 1.3rem;
+  z-index: 1;
+
+  transition: translateY .2s linear;
+
+  &:hover{
+    transform: translateY(-3px);
+  }
+}
+
+/*-----Modal_02-----*/
+
+.modal__content{
+  padding: 7.5rem 1.5rem;
+}
+
+.modal__title{
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  color: @black;
+  font-weight: bold;
+  margin-bottom: 5.4rem;
+}
+
+.modal__subtitle{
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: @black;
+  font-weight: normal;
+}

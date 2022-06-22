@@ -1,0 +1,83 @@
+.investor {
+  margin: 0 0 100px 0;
+  @media (max-width: $md2+px) {
+    margin: 0 0 60px 0;
+  }
+  @media (max-width: $md3+px) {
+    margin: 0 0 50px 0;
+  }
+  &__title {
+    margin: 0 0 50px 0;
+    @media (max-width: $md3+px) {
+      margin: 0 0 20px 0;
+    }
+  }
+  &__text {
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 300;
+    max-width: 670px;
+    margin: 0 0 40px 0;
+    @media (max-width: $md4+px) {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0 0 20px 0;
+    }
+  }
+  &__stat {
+  }
+  &__btn {
+  }
+}
+
+.stat-investor {
+  @include flexbox();
+  justify-content: space-between;
+  margin: 0 -5px 30px -5px;
+  &__column {
+    flex: 0 1 auto;
+    padding: 0 5px;
+    margin: 0 0 25px 0;
+    @media (max-width: $md3+px) {
+      flex: 0 0 33.333%;
+    }
+    @media (max-width: $md4+px) {
+      flex: 0 0 50%;
+    }
+  }
+  &__item {
+  }
+
+  @media (max-width: $md3+px) {
+    margin: 0 -5px 0px -5px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.item-stat {
+  text-align: center;
+  &__value {
+    color: #007397;
+    font-size: 54px;
+
+    font-family: "PT Serif";
+    text-transform: uppercase;
+    margin: 0 0 7px 0;
+
+    @media (max-width: $md2+px) {
+      margin: 0 0 5px 0;
+      font-size: 40px;
+    }
+  }
+  &__text {
+    color: #aec3d4;
+    font-size: 16px;
+    line-height: 32px;
+
+    margin: 0 0 55px 0;
+    @media (max-width: $md2+px) {
+      font-size: 14px;
+    }
+  }
+}

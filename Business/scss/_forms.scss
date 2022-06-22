@@ -1,0 +1,67 @@
+//<FORM (a.f+tab)>=================================================
+.form {
+}
+.form-row {
+  @include flexbox();
+  margin: 0 -15px;
+}
+.form__column {
+  padding: 0 15px;
+}
+.form-input {
+}
+.form-button {
+}
+//</FORM>==========================================================
+
+//<BUTTONS (a.btn+tab)>============================================
+.btn {
+  font-family: "PT Sans";
+  display: inline-block;
+  padding: 0 30px;
+  height: 56px;
+  background-color: #007397;
+  line-height: 56px;
+  overflow: hidden;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  position: relative;
+  min-width: 270px;
+  text-align: center;
+  &:after {
+    content: "";
+    width: 0;
+    position: absolute;
+    @include anim(0.8s, 0s);
+    height: 100%;
+    left: 50%;
+    top: 0;
+    background-color: #00526b;
+  }
+  span {
+    position: relative;
+    z-index: 2;
+  }
+  &:hover {
+    &:after {
+      left: 0;
+      width: 100%;
+    }
+  }
+  &.fw {
+    width: 100%;
+  }
+
+  @media (max-width: $md3+px) {
+    @include flexbox();
+    justify-content: center;
+    align-items: center;
+    line-height: 18px;
+    font-size: 14px;
+  }
+}
+
+//</BUTTONS>=======================================================
